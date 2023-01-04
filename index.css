@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: rgb(70,1,58);
+  background: linear-gradient(90deg, rgba(70,1,58,1) 0%, rgba(0,160,218,1) 2%, rgba(1,49,68,1) 2%, rgba(2,0,36,1) 95%, rgba(0,208,167,1) 95%, rgba(147,0,237,1) 100%, rgba(0,208,167,1) 100%);
+  overflow: hidden
+  scroll-behavior: smooth;
+  /* Create the parallax scrolling effect */
+  color-scheme: dark;
+}
+
+/* Default styles for all viewports */
+.nav-bar {
+  position: absolute;
+  width: 100vw;
+  padding: max(6vw, 4rem) max(10vw, 4rem);
+  z-index: 4;
+}
+
+.nav-bar-list {
+  list-style: none;
+  border-color: #3398db;
+  border-width: 1.5rem;
+  border-radius: 0.5rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styles to apply when the viewport is less than 600px wide */
+@media (max-width: 600px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+.nav-link {
+  font-family: Product Sans;
+  text-decoration: none;
+  font-size: max(2vw, 1.1rem);
+
+  background: linear-gradient(156deg, #3398db, #a463bf);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  padding: max(10vw, 6rem);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.title {
+  font-family: Product Sans;
+  background: linear-gradient(156deg, #a463bf, #3398db);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title.name {
+  font-size: max(4.8vw, 2.8rem);
+}
+
+.title.profession {
+  font-size: max(3.8vw, 1.8rem);
+  font-style: italic;
+}
+
+.link-icon {
+  width: max(4vw, 32px);
+}
+
+.title.about {
+  font-size: 3rem;
+}
+
+.title.projects {
+  font-size: 3rem;
+}
+
+.about-card .about-paragraph {
+  margin-top: 2rem;
+  background-color: #191a1c;
+  font-family: Product Sans;
+  font-size: 1.8rem;
+ color: white;
+  width: max(50vw, 300px);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.title.experience {
+  font-size: 3rem;
+}
+
+.experience-list {
+  list-style: none;
+  padding-top: 4rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-paragraph {
+  background-color: #191a1c;
+  font-family: Product Sans;
+  font-size: 1.4rem;
+  color: white;
+  width: max(40vw, 300px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.timeline {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: Product Sans;
+  color: #ffffff;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline__component--title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.timeline__component--years {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.timeline__component--description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.title.skills {
+  font-size: 3rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding-top: 4rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-paragraph {
+  background-color: #191a1c;
+  font-family: Product Sans;
+  font-size: 1.4rem;
+  color: white;
+  width: max(40vw, 300px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+}
+
+.skills-list li span {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.skills-list li img {
+  height: 1.5rem;
+}
+
+.skills-list li.html img {
+  width: 2rem;
+}
+
+.skills-list li.css img {
+  width: 2.5rem;
+}
+
+.skills-list li.javascript img {
+  width: 3rem;
+}
+
+.skills-list li.react img {
+  width: 3.5rem;
+}
+
+.skills-list li.node img {
+  width: 2.5rem;
+}
+
+.skills-list li.express img {
+  width: 3.5rem;
+}
+
+.skills-list li.mongodb img {
+  width: 3.5rem;
+}
+
+.title.contact {
+  font-size: 3rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.contact-card img {
+  width: max(10vw, 64px);
+  height: max(10vw, 64px);
+  border-radius: 50%;
+}
+
+.contact-card .contact-info {
+  margin-top: 2rem;
+  background-color: #191a1c;
+  font-family: Product Sans;
+  font-size: 1.4rem;
+  color: white;
+  width: max(40vw, 300px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card .contact-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-card .contact-info img {
+  width: max(4vw, 32px);
+  height: max(4vw, 32px);
+  margin-bottom: 0.5rem;
+}
