@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./index.css"
+    />
+    <title>Thomas</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-bar-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">
+            Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-card card">
+      <h1 class="title name">Thomas</h1>
+      <h3 class="title profession">Quantumn Physicist</h2>
+      <div class="link">
+        <a href="https://www.linkedin.com/" target="_blank">
+          <svg
+            class="link-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            fill="#3398DB"
+          >
+            <title>ionicons-v5_logos</title>
+            <path
+              d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="about-card card" id="about">
+      <h1 class="title about">Hello!</h1>
+      <p class="about-paragraph">
+        Working with data keeps things interesting and that is where my passion lies.
+    </div>
+  <div class="experience-card card" id="experience">
+    <h1 class="title about">Work Experience</h1>
+    <div class="timeline">
+  <div class="timeline__component">
+    <div class="timeline__date timeline__date--right">January 1st, 2000</div>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">Graduated High School</h2>
+    <p class="timeline__paragraph">
+      Something something, placeholder, and something.
+    </p>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">Hacked into CERN</h2>
+    <p class="timeline__paragraph">
+      Microwaved a banana.
+    </p>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component">
+    <div class="timeline__date">January 1st, 2000</div>
+  </div>
+  <div class="timeline__component">
+    <div class="timeline__date timeline__date--right">January 1st, 2000</div>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+  </div>
+  <div class="timeline__component timeline__component--bg">
+    <h2 class="timeline__title">Invented a time machine.</h2>
+    <p class="timeline__paragraph">
+      Went forward in time by 1 second or something.
+    </p>
+  </div>
+  <div class="timeline__component timeline__component--bottom timeline__component--bg">
+    <h2 class="timeline__title">Took a potato chip/h2>
+    <p class="timeline__paragraph">
+      And ate it!
+    </p>
+  </div>
+  <div class="timeline__middle">
+    <div class="timeline__point"></div>
+    <div class="timeline__point timeline__point--bottom"></div>
+  </div>
+  <div class="timeline__component timeline__component--bottom">
+    <div class="timeline__date">January 1st, 2000</div>
+  </div>
+</div>
+</div>
+<div class="contact-card card" id="contact">
+<h3 class="title about">Contact me</h3>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="about-paragraph">Your name:</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="about-paragraph">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="about-paragraph">Your message:</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+      </div>
+  </body>
+</html>
